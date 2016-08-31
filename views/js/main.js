@@ -506,7 +506,7 @@ function updatePositions() {
   var items = document.getElementsByClassName('mover');
   var cachedScrollTop=document.body.scrollTop;
   var len = items.length;
-  for (var i = 0; i < len; i++) {
+  for (var i = 0; i < len/2; i++) {
     items[i].style.left = items[i].basicLeft + 100 * Math.sin((cachedScrollTop / 1250) + (i % 5)) + 'px';
   }
 
