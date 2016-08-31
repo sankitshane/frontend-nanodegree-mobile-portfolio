@@ -1,0 +1,28 @@
+{
+  "name": "frontend-nanodegree-mobile-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website to demo fast loading and rendering",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sankitshane/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "\"\"\u001b[D\u001bsankitshane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sankitshane/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/sankitshane/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}

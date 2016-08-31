@@ -422,6 +422,7 @@ var resizePizzas = function(size) {
   changeSliderLabel(size);
 
    // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
+   //reduced reassigning of windowWidth by assiging it once and passing it in the function as argument.
   function determineDx (elem, size,windowWidth) {
     var oldWidth = elem.offsetWidth;
     var oldSize = oldWidth / windowWidth;
@@ -447,6 +448,8 @@ var resizePizzas = function(size) {
   }
 
   // Iterates through pizza elements on the page and changes their widths
+  // Variables are assigned outside the loop to reduce multiple assignment.
+  //requestAnimationFrame function is used to make animations.
   function changePizzaSizes(size) {
     var pizzaItems = document.getElementsByClassName("randomPizzaContainer");
     var windowwidth = document.getElementById("randomPizzas").offsetWidth;
@@ -497,6 +500,9 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+//requestAnimationFrame function is used to make animations
+//Variables are assigned outside the loop to reduce multiple assignment
+//getElementsByClassName is used instead of querySelectorAll for better performance
 function updatePositions() {
 
   frame++;
