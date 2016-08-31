@@ -23,3 +23,8 @@ check the comments in the code for more details*
 * In-line CSS
 * Variable declaration outside loops
 * checking for repeated assignment.
+
+###Gulp Plugins:
+* Gulp-uglify : to minify JavaScript
+* Gulp-uglifycss : to minify CSS
+* Gulp-imagemin : to compress images
