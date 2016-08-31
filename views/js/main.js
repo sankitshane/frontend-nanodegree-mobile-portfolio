@@ -456,8 +456,7 @@ var resizePizzas = function(size) {
       pizzaItems[i].style.width = newwidth;
     }
   }
-
-  changePizzaSizes(size);
+  requestAnimationFrame(changePizzaSizes(size));
 
   // User Timing API is awesome
   window.performance.mark("mark_end_resize");
